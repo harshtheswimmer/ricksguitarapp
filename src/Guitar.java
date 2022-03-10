@@ -1,13 +1,17 @@
+import enums.Builder;
+import enums.Type;
+import enums.Wood;
+
 public class Guitar {
     private String serialNumber;
     private double price;
-    private String builder;
-    private String type;
-    private String backWood;
+    private Builder builder;
+    private Type type;
+    private Wood backWood;
     private String model;
-    private String topWood;
+    private Wood topWood;
 
-    public Guitar(String serialNumber, double price, String builder, String type, String backWood, String model, String topWood) {
+    public Guitar(String serialNumber, double price, Builder builder, Type type, Wood backWood, String model, Wood topWood) {
         this.serialNumber = serialNumber;
         this.price = price;
         this.builder = builder;
@@ -25,15 +29,15 @@ public class Guitar {
         return price;
     }
 
-    public String getBuilder() {
+    public Builder getBuilder() {
         return builder;
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
-    public String getBackWood() {
+    public Wood getBackWood() {
         return backWood;
     }
 
@@ -41,7 +45,7 @@ public class Guitar {
         return model;
     }
 
-    public String getTopWood() {
+    public Wood getTopWood() {
         return topWood;
     }
 }
